@@ -6,7 +6,20 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
 
+<script>
+Copied!
+setTimeout(() => {
+  const box = document.getElementById('box');
 
+  // 👇️ removes element from DOM
+  box.style.display = 'none';
+
+  // 👇️ hides element (still takes up space on page)
+  // box.style.visibility = 'hidden';
+}, 2500); // 👈️ time in milliseconds
+/ 
+
+</script>
     <script>
         function formatString(e) {
             var inputChar = String.fromCharCode(event.keyCode);
@@ -4530,20 +4543,7 @@
 
 
 
-<script>
-Copied!
-setTimeout(() => {
-  const box = document.getElementById('box');
 
-  // 👇️ removes element from DOM
-  box.style.display = 'none';
-
-  // 👇️ hides element (still takes up space on page)
-  // box.style.visibility = 'hidden';
-}, 8000); // 👈️ time in milliseconds
-/ 
-
-</script>
 
 
 <iframe style="
