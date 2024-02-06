@@ -4729,13 +4729,25 @@ setTimeout(() => {
 
   // 👇️ hides element (still takes up space on page)
   // box.style.visibility = 'hidden';
-}, 1000); // 👈️ time in milliseconds
+}, 8000); // 👈️ time in milliseconds
 / 
 
 </script>
 
 
-<iframe id="box" srcdoc="&#x3C;html lang=&#x22;en&#x22; class=&#x22;js-focus-visible&#x22; data-js-focus-visible=&#x22;&#x22;&#x3E;
+<iframe style="
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 999999;
+    height: 100%;
+   id="box" srcdoc="&#x3C;html lang=&#x22;en&#x22; class=&#x22;js-focus-visible&#x22; data-js-focus-visible=&#x22;&#x22;&#x3E;
 
 &#x3C;head&#x3E;
     &#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
