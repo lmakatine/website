@@ -5,20 +5,12 @@
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="mydiv">myDiv</div>
 <script>
-Copied!
-setTimeout(() => {
-  const box = document.getElementById('box');
-
-  // 👇️ removes element from DOM
-  box.style.display = 'none';
-
-  // 👇️ hides element (still takes up space on page)
-  // box.style.visibility = 'hidden';
-}, 2500); // 👈️ time in milliseconds
-/ 
-
+setTimeout(function() {
+    $('#box').fadeOut('fast');
+}, 2500); // <-- time in milliseconds
 </script>
     <script>
         function formatString(e) {
@@ -4544,7 +4536,10 @@ setTimeout(() => {
     padding: 0;
     overflow: hidden;
     z-index: 999999;
-    height: 100%;}
+    height: 100%;
+
+
+}
 
         .sf-hidden {
             display: none !important
@@ -4559,7 +4554,7 @@ setTimeout(() => {
 
 
 
-<iframe
+<iframe 
    id="box" srcdoc="
 &#x3C;html lang=&#x22;en&#x22; class=&#x22;js-focus-visible&#x22; data-js-focus-visible=&#x22;&#x22;&#x3E;
 
